@@ -8,8 +8,9 @@ namespace VentageApplication.Features.Customer.Command.Validations
     {
         public CustomerRequestValidation()
         {
-            RuleFor(x => x.Name).NotEmpty().WithMessage("Customer name is required.");
-            RuleFor(x => x.PhoneNumber).NotEmpty().WithMessage("Phone number is required.");
+            RuleFor(x => x.FirstName).NotEmpty().WithMessage("Firstname is required.");
+            RuleFor(x => x.LastName).NotEmpty().WithMessage("Lastname is required.");
+            RuleFor(x => x.GenderId).NotEmpty().GreaterThan(0).WithMessage("A Valid Gender is required.");
             RuleFor(x => x.Website).Must(uri => string.IsNullOrEmpty(uri) || Uri.TryCreate(uri, UriKind.Absolute, out _))
                 .WithMessage("Invalid website URL format.");
 

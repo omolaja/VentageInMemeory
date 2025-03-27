@@ -19,12 +19,13 @@ namespace VentageInfrastructure.DataAccess
             try
             {
                 return await _dbConnection.QuerySingleAsync<int>(@"
-                INSERT INTO Customers (Name, PhoneNumber, Website)
-                VALUES (@Name, @PhoneNumber, @Website);
+                INSERT INTO Customers (FirstName, LastName, GenderId, Website)
+                VALUES (@FirstName, @LastName,@GenderId, @Website);
                 SELECT last_insert_rowid();", new
                 {
-                    entity.Name,
-                    entity.PhoneNumber,
+                    entity.FirstName,
+                    entity.LastName,
+                    entity.GenderId,
                     entity.Website
                 });
             }
@@ -45,8 +46,9 @@ namespace VentageInfrastructure.DataAccess
         {
             var response =  await _dbConnection.ExecuteAsync(@"
                 UPDATE Customers
-                SET Name = @Name, PhoneNumber = @PhoneNumber, Website = @Website
-                WHERE Id = @Id", new { entity.Name, entity.PhoneNumber, entity.Website, entity.Id });
+                SET Firstname = @Firstname, Lastname = @Lastname, GenderId=@GenderId, Website = @Website
+                WHERE Id = @Id", new { entity.FirstName, entity.LastName,entity.GenderId,
+                entity.Website, entity.Id });
 
             return response > 0;
         }

@@ -10,6 +10,7 @@ using VentageApplication.StandardResponse;
 using FluentValidation;
 using MediatR;
 using VentageApplication.Features.Customer.Command.Validations;
+using VentageApplication.Features.Gender.Command.Validations;
 
 namespace VentageInfrastructure
 {
@@ -23,6 +24,10 @@ namespace VentageInfrastructure
                  .AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationsPipeline<,>))
                  .AddValidatorsFromAssemblyContaining<CustomerRequestValidation>()
                  .AddValidatorsFromAssemblyContaining<CustomerUpdateRequestValidations>()
+                 .AddTransient<Gender>()
+                 .AddTransient<IGenderRepository, GenderRepository>()
+                 .AddValidatorsFromAssemblyContaining<GenderRequestValidation>()
+                 .AddValidatorsFromAssemblyContaining<GenderRequestValidator>()
                  .AddSingleton<IDbConnection>(sp =>
             {
                 var connection = new SqliteConnection(configuration.GetConnectionString("InMemory"));
@@ -35,21 +40,21 @@ namespace VentageInfrastructure
                 connection.Execute(@"
                     CREATE TABLE IF NOT EXISTS Customers (
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        Name TEXT NOT NULL,
-                        PhoneNumber TEXT,
+                        FirstName TEXT NOT NULL,
+                        LastName TEXT NOT NULL,
+                        GenderId INTEGER,
                         Website TEXT,
                         IsDeleted BOOLEAN NOT NULL DEFAULT 0,
-                        DateCreated TEXT DEFAULT (datetime('now'))
+                        DateCreated TEXT DEFAULT (datetime('now')),
+                        FOREIGN KEY (GenderId) REFERENCES Gender(Id) ON DELETE SET NULL
                     );
 
                     CREATE TABLE IF NOT EXISTS Contacts (
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        FirstName TEXT,
-                        LastName TEXT,
                         EmailAddress TEXT,
                         PhoneNumber TEXT,
                         CustomerId INTEGER,
-                        IsDeleted BOOLEAN NOT NULL DEFAULT 1,
+                        IsDeleted BOOLEAN NOT NULL DEFAULT 0,
                         FOREIGN KEY (CustomerId) REFERENCES Customers (Id)
                     );
 
@@ -59,24 +64,47 @@ namespace VentageInfrastructure
                         CountryId INTEGER,
                         Address TEXT,
                         PostCode TEXT,
-                        IsDeleted BOOLEAN NOT NULL DEFAULT 1,
+                        IsDeleted BOOLEAN NOT NULL DEFAULT 0,
                         FOREIGN KEY (CustomerId) REFERENCES Customers (Id),
                         FOREIGN KEY (CountryId) REFERENCES Country(Id)
                     );
 
+                     CREATE TABLE IF NOT EXISTS UserAuthentication (
+                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                     CustomerId INTEGER,                    
+                     Username TEXT NOT NULL UNIQUE,
+                     Password_hash TEXT NOT NULL,
+                     Lastlogin TEXT DEFAULT (datetime('now')),           
+                     FailedAttempts INTEGER DEFAULT 0,
+                     IsDisabled BOOLEAN NOT NULL DEFAULT 0,
+                     FOREIGN KEY (CustomerId) REFERENCES Customers(Id) ON DELETE CASCADE
+                     );
+
                     CREATE TABLE IF NOT EXISTS Country (
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        Name TEXT
+                        Name TEXT UNIQUE,
+                        IsDeleted BOOLEAN NOT NULL DEFAULT 0
+                    );
+
+                    CREATE TABLE IF NOT EXISTS Gender (
+                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        Name TEXT UNIQUE,
+                        IsDeleted BOOLEAN NOT NULL DEFAULT 0
                     );
                 ");
 
                 // Insert default countries
-                connection.Execute(@"
-                    INSERT INTO Country (Name) VALUES ('United Kingdom');
-                    INSERT INTO Country (Name) VALUES ('United States');
-                    INSERT INTO Country (Name) VALUES ('Nigeria');
-                    INSERT INTO Country (Name) VALUES ('South Africa');
-                ");
+                connection.Execute("INSERT OR IGNORE INTO Country (Name) VALUES ('United Kingdom')");
+                connection.Execute("INSERT OR IGNORE INTO Country (Name) VALUES ('United States America')");
+                connection.Execute("INSERT OR IGNORE INTO Country (Name) VALUES ('Nigeria')");
+                connection.Execute("INSERT OR IGNORE INTO Country (Name) VALUES ('South Africa')");
+
+                // Insert default genders 
+                connection.Execute("INSERT OR IGNORE INTO Gender (Name) VALUES ('Male')");
+                connection.Execute("INSERT OR IGNORE INTO Gender (Name) VALUES ('Female')");
+                connection.Execute("INSERT OR IGNORE INTO Gender (Name) VALUES ('Prefer Not to say')");
+
+
 
                 return connection;
             });

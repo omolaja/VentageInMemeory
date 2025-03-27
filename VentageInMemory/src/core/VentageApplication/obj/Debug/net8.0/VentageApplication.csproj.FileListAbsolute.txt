@@ -13,3 +13,4 @@
 /Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/bin/Debug/net8.0/VentageDomain.dll
 /Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/bin/Debug/net8.0/VentageDomain.pdb
 /Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/obj/Debug/net8.0/VentageA.363A2324.Up2Date
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/obj/Debug/net8.0/VentageApplication.sourcelink.json

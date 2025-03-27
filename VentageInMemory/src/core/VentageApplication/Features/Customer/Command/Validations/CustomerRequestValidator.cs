@@ -12,7 +12,6 @@ namespace VentageApplication.Features.Customer.Command.Validations
 				.SetValidator(new CustomerRequestValidation());
 		}
 
-        
     }
 }
 

@@ -17,6 +17,10 @@
     <None Remove="Mapper\" />
     <None Remove="PipelineBehaviour\" />
     <None Remove="Features\Customer\Command\Validations\" />
+    <None Remove="Features\Gender\" />
+    <None Remove="Features\Gender\Queries\" />
+    <None Remove="Features\Gender\Command\" />
+    <None Remove="Features\Gender\Command\Validations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -29,6 +33,10 @@
     <Folder Include="Mapper\" />
     <Folder Include="PipelineBehaviour\" />
     <Folder Include="Features\Customer\Command\Validations\" />
+    <Folder Include="Features\Gender\" />
+    <Folder Include="Features\Gender\Queries\" />
+    <Folder Include="Features\Gender\Command\" />
+    <Folder Include="Features\Gender\Command\Validations\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.0" />

@@ -13,6 +13,9 @@ namespace VentageApplication.Mapper
 			CreateMap<CustomerEntity, CustomerDTO>();
 			CreateMap<CustomerUpdateModel, CustomerEntity>();
             CreateMap<CustomerEntity, CustomerModel>();
+			CreateMap<GenderModel, GenderEntity>();
+			CreateMap<GenderEntity, GenderDTO>();
+           
         }
 	}
 }

@@ -9,3 +9,4 @@
 /Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/refint/VentageDomain.dll
 /Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/VentageDomain.pdb
 /Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/ref/VentageDomain.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/VentageDomain.sourcelink.json
