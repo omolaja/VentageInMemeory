@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "v96xqkEnTBolKQ+NQ90Avbv8/uZGQDguwZWo0NKPyG660vewF4Kihj92R8GWhmx3vPDkcKNgwleRP9Zkga+J2Q==",
+  "success": true,
+  "projectFilePath": "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/VentageApplication.csproj",
+  "expectedPackageFiles": [
+    "/Users/oladipo/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/fluentvalidation/8.2.2/fluentvalidation.8.2.2.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/fluentvalidation.dependencyinjectionextensions/8.2.2/fluentvalidation.dependencyinjectionextensions.8.2.2.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/mediatr/8.0.0/mediatr.8.0.0.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/8.0.0/mediatr.extensions.microsoft.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/system.componentmodel.annotations/4.4.1/system.componentmodel.annotations.4.4.1.nupkg.sha512",
+    "/Users/oladipo/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

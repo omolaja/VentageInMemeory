@@ -1,0 +1,17 @@
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/bin/Debug/net8.0/VentageInfrastructure.deps.json
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/bin/Debug/net8.0/VentageInfrastructure.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/bin/Debug/net8.0/VentageInfrastructure.pdb
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/bin/Debug/net8.0/VentageApplication.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/bin/Debug/net8.0/VentageApplication.pdb
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/VentageInfrastructure.csproj.AssemblyReference.cache
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/VentageInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/VentageInfrastructure.AssemblyInfoInputs.cache
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/VentageInfrastructure.AssemblyInfo.cs
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/VentageInfrastructure.csproj.CoreCompileInputs.cache
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/VentageI.7E2F9A19.Up2Date
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/VentageInfrastructure.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/refint/VentageInfrastructure.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/VentageInfrastructure.pdb
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/obj/Debug/net8.0/ref/VentageInfrastructure.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/bin/Debug/net8.0/VentageDomain.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/VentageInfrastructure/bin/Debug/net8.0/VentageDomain.pdb

@@ -1,0 +1,11 @@
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/bin/Debug/net8.0/VentageDomain.deps.json
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/bin/Debug/net8.0/VentageDomain.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/bin/Debug/net8.0/VentageDomain.pdb
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/VentageDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/VentageDomain.AssemblyInfoInputs.cache
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/VentageDomain.AssemblyInfo.cs
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/VentageDomain.csproj.CoreCompileInputs.cache
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/VentageDomain.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/refint/VentageDomain.dll
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/VentageDomain.pdb
+/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/Debug/net8.0/ref/VentageDomain.dll

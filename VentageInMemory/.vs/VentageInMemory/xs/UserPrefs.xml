@@ -1,0 +1,7 @@
+﻿<Properties StartupConfiguration="{D67545BC-F08F-4634-A4CC-FF9DDDC4E638}|https">
+  <MonoDevelop.Ide.ItemProperties.src.VentageApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>src/core/VentageApplication/VentageDomain/VentageDomain.csproj</String>
+  </DisabledProjects>
+</Properties>

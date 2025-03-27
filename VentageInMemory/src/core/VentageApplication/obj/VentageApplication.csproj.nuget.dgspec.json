@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/VentageApplication.csproj": {}
+  },
+  "projects": {
+    "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/VentageApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/VentageApplication.csproj",
+        "projectName": "VentageApplication",
+        "projectPath": "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/VentageApplication.csproj",
+        "packagesPath": "/Users/oladipo/.nuget/packages/",
+        "outputPath": "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageApplication/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oladipo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/VentageDomain.csproj": {
+                "projectPath": "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/VentageDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/VentageDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/VentageDomain.csproj",
+        "projectName": "VentageDomain",
+        "projectPath": "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/VentageDomain.csproj",
+        "packagesPath": "/Users/oladipo/.nuget/packages/",
+        "outputPath": "/Users/oladipo/Projects/VentageInMemeory/VentageInMemory/src/core/VentageDomain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/oladipo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
