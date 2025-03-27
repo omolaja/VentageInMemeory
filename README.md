@@ -1,14 +1,14 @@
 VentageInMemory
 
-VentageInMemory is an in-memory database implementation for handling customer-related data in a lightweight and efficient manner. This project leverages C#, Dapper, FluentValidation, and CQRS to provide a structured and scalable approach to data management.
+VentageInMemory is an in-memory database solution designed for efficient and lightweight customer data management. Built with C#, Dapper, FluentValidation, and CQRS, this project provides a structured and scalable approach to handling data. It simulates applications running on POS terminals, utilizing RAM as temporary storage for fast processing and retrieval.
 
 🚀 Features
 
-In-Memory Data Storage: Uses a dictionary to store customer data instead of a persistent database.
+In-Memory Data Storage: Uses an SQlite in-memory mode for temporary storage.
 
 Dapper Integration: Simulates SQL-like queries with in-memory data.
 
-CQRS Architecture: Separates read and write operations for better performance.
+CQRS Architecture: This architecture Separates read and write operations for better performance.
 
 FluentValidation: Ensures data integrity and validation before processing requests.
 
