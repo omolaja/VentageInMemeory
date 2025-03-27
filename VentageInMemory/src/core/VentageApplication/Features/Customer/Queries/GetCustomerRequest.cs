@@ -35,6 +35,7 @@ namespace VentageApplication.Features.Customer.Queries
             }
 
             var customer = _mapper.Map<IEnumerable<CustomerDTO>>(response);
+            
             return customer;
 
           

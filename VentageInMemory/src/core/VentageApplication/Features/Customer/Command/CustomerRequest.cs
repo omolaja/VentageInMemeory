@@ -24,11 +24,13 @@ namespace VentageApplication.Features.Customer.Command
     {
         private readonly IMapper _mapper;
         private readonly ICustomerRepository _customerRepository;
+        private readonly ICustomerAddressRepository _customerAddressRepository;
 
-        public CustomerRequestHandler(IMapper mapper, ICustomerRepository customerRepository)
+        public CustomerRequestHandler(IMapper mapper, ICustomerRepository customerRepository, ICustomerAddressRepository customerAddressRepository)
         {
             _mapper = mapper;
             _customerRepository = customerRepository;
+            _customerAddressRepository = customerAddressRepository;
         }
 
 
@@ -43,6 +45,19 @@ namespace VentageApplication.Features.Customer.Command
             customer.DateCreated = DateTime.UtcNow;
 
             var response = await _customerRepository.AddCustomer(customer);
+
+            if(response > 0)
+            {
+                if(customer.customerAddress != null)
+                {
+                    var customerAddress = _mapper.Map<CustomerAddressEntity>(request.CustomerModel.customerAddress);
+                    customerAddress.CustomerId = response;
+                    var customerAddressResponse = await _customerAddressRepository.AddCustomerAddressAsync(customerAddress);
+
+                    return customerAddressResponse > 0 ? ResponseHelper.CreateResponse(ResponseStatus.Success, null) :
+                        ResponseHelper.CreateResponse(ResponseStatus.PartialSuccess, null);
+                }
+            }
 
             return response > 0 ? ResponseHelper.CreateResponse(ResponseStatus.Success, null) :
                 ResponseHelper.CreateResponse(ResponseStatus.Failure, null);

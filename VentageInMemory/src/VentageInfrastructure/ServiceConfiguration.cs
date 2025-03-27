@@ -28,6 +28,8 @@ namespace VentageInfrastructure
                  .AddTransient<IGenderRepository, GenderRepository>()
                  .AddValidatorsFromAssemblyContaining<GenderRequestValidation>()
                  .AddValidatorsFromAssemblyContaining<GenderRequestValidator>()
+                 .AddTransient<ICustomerAddressRepository, CustomerAddressRepository>()
+                 .AddTransient<CustomerAddress>()
                  .AddSingleton<IDbConnection>(sp =>
             {
                 var connection = new SqliteConnection(configuration.GetConnectionString("InMemory"));

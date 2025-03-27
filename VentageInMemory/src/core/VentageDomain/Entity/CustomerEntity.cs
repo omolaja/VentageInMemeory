@@ -11,6 +11,10 @@ namespace VentageDomain.Entity
         public bool IsDeleted { get; set; }  
         public DateTime DateCreated { get; set; }
 
+        public CustomerAddressEntity customerAddress { get; set; }
+
     }
+
+  
 }
 
