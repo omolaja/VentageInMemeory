@@ -8,16 +8,16 @@ using VentageDomain.Entity;
 
 namespace VentageApplication.Features.Customer.Command
 {
-	public class CustomerRequest : IRequest<Response>
-	{
-		public CustomerModel CustomerModel { get; set; }
+    public class CustomerRequest : IRequest<Response>
+    {
+        public CustomerModel CustomerModel { get; set; }
 
-		public CustomerRequest(CustomerModel customerModel)
-		{
+        public CustomerRequest(CustomerModel customerModel)
+        {
             CustomerModel = customerModel;
 
         }
-	}
+    }
 
 
     public class CustomerRequestHandler : IRequestHandler<CustomerRequest, Response>
@@ -42,7 +42,7 @@ namespace VentageApplication.Features.Customer.Command
 
             customer.DateCreated = DateTime.UtcNow;
 
-            var response =  await _customerRepository.AddCustomer(customer);
+            var response = await _customerRepository.AddCustomer(customer);
 
             return response > 0 ? ResponseHelper.CreateResponse(ResponseStatus.Success, null) :
                 ResponseHelper.CreateResponse(ResponseStatus.Failure, null);
